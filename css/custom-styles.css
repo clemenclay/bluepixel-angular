@@ -1,4 +1,13 @@
 body {font-family: 'Poppins', sans-serif;}
+
+footer.page-footer {
+    padding-top: 20px;
+    background-color: #ba68c8;
+    background-color: #a3a4a4 !important;
+}
+
+
+
 .ocean {
     height: 5%;
     width: 100%;
@@ -12,10 +21,10 @@ categories-container pinned nav {
 }
 
 
-    nav.nav-extended .nav-wrapper {
-        min-height: 64px;
-        line-height: 149px;
-    }
+nav.nav-extended .nav-wrapper {
+    min-height: 64px;
+    line-height: 149px;
+}
 
 
 nav ul:not(.indicators) li.k::before {border: none !important;}
@@ -41,7 +50,7 @@ nav i.material-icons {
 }
 
 .side-nav {
-    top: 73px !important;
+    top: 65px !important;
     /*position: relative !important;*/
     z-index: 2 !important;
 }
@@ -136,15 +145,15 @@ nav ul li a.active {
 
 
 /*.azulDark{*/
-    /*background-color:#173668 !important;}*/
+/*background-color:#173668 !important;}*/
 /*.azul{*/
-    /*background-color:#0088CD !important;}*/
+/*background-color:#0088CD !important;}*/
 /*.azulLight{*/
-    /*background-color: #26c6da !important;}*/
+/*background-color: #26c6da !important;}*/
 /*.celeste{*/
-    /*background-color:#26c6da !important;}*/
+/*background-color:#26c6da !important;}*/
 /*.celesteLight{*/
-    /*background-color:#67DCED !important;}*/
+/*background-color:#67DCED !important;}*/
 
 
 /*   https://www.materialpalette.com/cyan/cyan   */
