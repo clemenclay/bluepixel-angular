@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular + MaterializeCSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/custom-styles.css">
+    <!--<base href="/Bluepixel-Angular/">-->
+</head>
+
+<body ng-app="mainApp">
+    
+    <header>
+
+        <nav class="nav-extended">
+            <div class="ocean">
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+            <div class="nav-background">
+                <div class="ea k" style="background-image: url('img/fondo-home.png');background-position: center;"></div>
+            </div>
+            <div class="nav-wrapper db hide-on-small-only">
+                <a href="index.php" class="brand-logo hide-on-small-only" style="height: 66px;">
+                    <img src="img/logo_dot.png" style="margin: 10px auto;">
+                    <img src="img/logo.png" style="height: 32px;padding: 0px;margin: 14px auto;">
+                </a>
+
+                <!--            <ul class="bt hide-on-med-and-down">-->
+                <!--                <li class="waves-effect"><a href="index.php">Inicio</a></li>-->
+                <!--                <li class="waves-effect"><a href="portfolio.php">Portfolio</a></li>-->
+                <!--                <li class="waves-effect"><a href="contacto.php">Contacto</a></li>-->
+                <!--            </ul>-->
+
+                <!-- Dropdown Structure -->
+
+
+                <div class="nav-header de">
+
+                    <!--                <h1>I MAKE THINGS</h1>-->
+                    <div class="ge">Portfolio</div>
+                </div>
+            </div>
+
+            <!-- Fixed Masonry Filters -->
+            <!--        <div class="categories-wrapper default-primary-color">-->
+            <div class="categories-wrapper default-primary-color">
+                <div class="categories-container pin-top" style="top: 0px;">
+                    <div class="hide-on-med-and-up show-on-small-only">
+                        <a href="#" class="button-collapse" data-activates="nav-mobile"><i class="material-icons">menu</i></a>
+                        <a href="index.php">
+                            <img src="img/logo_dot.png" style="margin: 10px auto;">
+                            <img src="img/logo.png" style="height: 32px;padding: 0px;margin: 14px auto;">
+                        </a>
+                    </div>
+                    <div class="show-on-large hide-on-small-only">
+                        <ul class="categories db show-on-large hide-on-small-only">
+                            <li class="waves-effect"><a id="home" href="#!/"><i class="material-icons">home</i>Inicio</a></li>
+                            <li class="waves-effect"><a id="portfolio" href="#!/portfolio"><i class="material-icons">work</i>Portfolio</a></li>
+                            <li class="waves-effect"><a id="servicios" href="#!/servicios"><i class="material-icons">settings</i>Servicios</a></li>
+                            <li class="waves-effect"><a id="contacto" href="#!/contacto"><i class="material-icons">email</i>Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <ul class="side-nav" id="nav-mobile" style="transform: translateX(-100%);">
+            <li><a id="home"  class="collapsible-header waves-effect waves-teal" href="#!/"><i class="material-icons">home</i>Inicio</a></li>
+            <li><a id="portfolio" class="collapsible-header waves-effect waves-teal" href="#!/portfolio"><i class="material-icons">work</i>Portfolio</a></li>
+            <li><a id="servicios" class="collapsible-header waves-effect waves-teal" href="#!/servicios"><i class="material-icons">settings</i>Servicios</a></li>
+            <li><a id="contacto" class="collapsible-header waves-effect waves-teal" href="#!/contacto"><i class="material-icons">email</i>Contacto</a></li>
+        </ul>
+<!--
+
+    <nav class="teal darker-1" role="navigation">
+        <div class="nav-wrapper container"><a id="logo-container" href="#!/" class="brand-logo right"><i class="material-icons">fingerprint</i></a>
+            <ul id="main-menu" class="left hide-on-med-and-down">
+                <li><a href="#!/" class="waves-effect waves-teal"><i class="material-icons left">home</i>Home</a></li>
+                <li><a href="#!/portfolio" class="waves-effect waves-teal"><i class="material-icons left">list</i>Portfolio</a></li>
+                <li><a href="#!/profile" class="waves-effect waves-teal"><i class="material-icons left">person</i>Profile</a></li>
+                <li><a href="#!/settings" class="waves-effect waves-teal"><i class="material-icons left">settings</i>Settings</a></li>
+            </ul>
+            <ul id="main-menu-mobile" class="side-nav">
+                &lt;!&ndash; look at script.js &ndash;&gt;
+            </ul>
+            <a href="javascript:void(0)" data-activates="main-menu-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+-->
+
+    <div class="progress teal lighten-4" ng-show="ajaxLoadingFlag">
+        <div class="indeterminate"></div>
+    </div>
+    </header>
+    
+    <main class="container">
+        <div ng-view></div>
+    </main>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
+</body>
+
+</html>

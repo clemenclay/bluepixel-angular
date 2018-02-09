@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="198" style=""><rect id="backgroundrect" width="100%" height="100%" x="0" y="0" fill="none" stroke="none"/>
+  <defs>
+    <linearGradient id="a" x1="50%" x2="50%" y1="-10.959%" y2="100%">
+      <stop stop-color="#57BBC1" stop-opacity=".25" offset="0%"/>
+      <stop stop-color="#015871" offset="100%"/>
+    </linearGradient>
+  <linearGradient id="svg_1" x1="NaN" x2="NaN" y1="-10.959%" y2="100%">
+      <stop stop-color="#57BBC1" stop-opacity=".25" offset="0%"/>
+      <stop stop-color="#015871" offset="100%"/>
+    </linearGradient></defs>
+  
+<g class="currentLayer" style=""><title>Layer 1</title><path fill="#26c6da" fill-rule="evenodd" d="M1599.995,152.88883917055108 C1289,152.88883917055108 1190.1019999999999,70.8306800722305 789,70.9998721528456 c-400,0 -500,81.88896701770547 -789,81.88896701770547 v52.111160829448934 H1600 s-0.005000000000000063,-32.48487947809804 -0.005000000000000063,-52.111160829448934 z" id="svg_2" class="selected" fill-opacity="1"/></g></svg>

@@ -1,0 +1,71 @@
+<section id="content">
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="default-text-primary-color center-align">Contacto</h2>
+            </div>
+            <div ng-controller="ContactController" class="row-fluid ng-scope">
+
+
+
+
+
+
+
+
+
+
+                <div class="span4">
+                    <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal ng-pristine ng-invalid ng-invalid-required" role="form">
+
+                        <div class="input-field" ng-class="{ 'has-error': contactform.inputName.$invalid &amp;&amp; submitted }">
+                            <input ng-model="formData.inputName" type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" id="inputName" name="inputName" required="">
+                            <label for="inputName" data-error="wrong" data-success="right" class="">Nombre</label>
+                        </div>
+
+                        <div class="input-field" ng-class="{ 'has-error': contactform.inputEmail.$invalid &amp;&amp; submitted }">
+                            <input ng-model="formData.inputEmail" type="email" class="form-control ng-pristine ng-invalid ng-invalid-required ng-valid-email" id="inputEmail" name="inputEmail" required="">
+                            <label for="inputEmail" data-error="wrong" data-success="right" class="">Email</label>
+                        </div>
+
+                        <div class="input-field" ng-class="{ 'has-error': contactform.inputSubject.$invalid &amp;&amp; submitted }">
+                            <input ng-model="formData.inputSubject" type="text" class="form-control ng-pristine ng-invalid ng-invalid-required" id="inputSubject" name="inputSubject" required="">
+                            <label for="inputSubject" data-error="wrong" data-success="right" class="">Asunto</label>
+                        </div>
+                    </form></div>
+                <div class="span4">
+
+                    <div class="input-field" ng-class="{ 'has-error': contactform.inputMessage.$invalid &amp;&amp; submitted }">
+                        <textarea ng-model="formData.inputMessage" class="materialize-textarea ng-invalid-required ng-pristine ng-invalid" rows="9" id="inputMessage" name="inputMessage" required=""></textarea>
+                        <label for="inputMessage" class="">Mensaje...</label>
+                    </div>
+
+
+                    <div class="control-group">
+                        <p style="margin-bottom:10px;float: left;" ng-class="result" class="ng-binding hidden"></p>
+                        <button type="submit" class="btn waves-effect waves-light" ng-disabled="submitButtonDisabled">
+                            Enviar
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+    </div></section>
+<script>
+$( "li a" ).removeClass( "active" )
+$( "li a#contacto" ).addClass( "active" );
+</script>
